@@ -2,12 +2,9 @@
 #include "ui_ErrorReportNext2.h"
 
 #include <QMessageBox>
-#include <QGridLayout>
 
-ErrorReportNext2::ErrorReportNext2(QWidget *parent)
-    : QMainWindow(parent)
-{
-    
+ErrorReportNext2::ErrorReportNext2(QWidget *parent) : QMainWindow(parent) {
+
     QMessageBox* errorMessageBox = new QMessageBox;
     errorMessageBox->setIcon(QMessageBox::Critical);
     errorMessageBox->setWindowTitle("svchost.exe - 应用程序错误");
@@ -19,8 +16,7 @@ ErrorReportNext2::ErrorReportNext2(QWidget *parent)
     QPushButton* CancelButton = errorMessageBox->addButton("取消", QMessageBox::ActionRole);
 
     int execResult = errorMessageBox->exec();
-    ui.setupUi(this); exit(0);
+    ui.setupUi(this); // exit(0);
 }
 
-ErrorReportNext2::~ErrorReportNext2()
-{}
+ErrorReportNext2::~ErrorReportNext2() {}

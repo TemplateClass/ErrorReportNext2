@@ -6,31 +6,118 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>400</height>
+    <width>586</width>
+    <height>274</height>
    </rect>
   </property>
-  <property name="windowTitle">
-   <string>ErrorReportNext2</string>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>600</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::FocusPolicy::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>ErrorReport Editor v_alpha_0.2</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="QIcon::ThemeIcon::MailMessageNew"/>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LayoutDirection::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="welcomeLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>431</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;欢迎来到 ErrorReport NextGen 2.0 错误弹窗编辑页面！&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>561</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="titleLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>331</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>弹窗标题（限一行）：</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="titleText">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>83</y>
+      <width>545</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>应用程序错误 - svchost.exe</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="contentLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>117</y>
+      <width>331</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>弹窗内容（可以多行）：</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="contentText">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>545</width>
+      <height>113</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>&quot;0x00000000&quot; 指令引用的 &quot;0x00000000&quot; 内存。该内存不能为 &quot;read&quot;。
+
+要终止程序，请单击“确定”。
+要调试程序，请单击“取消”。</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
